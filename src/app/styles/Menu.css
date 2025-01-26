@@ -1,0 +1,138 @@
+/* menu.css */
+
+.text-center {
+    text-align: center;
+  }
+  
+  .text-red {
+    color: #ff4747;
+  }  
+  
+  .text-sm {
+    font-size: 0.875rem; /* 14px */
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .tracking-wide {
+    letter-spacing: 0.05em;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem; /* 16px */
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem; /* 30px */
+  }
+  
+  .md\:text-4xl {
+    font-size: 2.25rem; /* 36px */
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .max-w-xl {
+    max-width: 36rem; /* 576px */
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mb-12 {
+    margin-bottom: 3rem; /* 48px */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-start {
+    justify-content: flex-start;
+  }
+  
+  .md\:justify-center {
+    justify-content: center;
+  }
+  
+  .gap-3 {
+    gap: 0.75rem; /* 12px */
+  }
+  
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  
+  .pb-4 {
+    padding-bottom: 1rem; /* 16px */
+  }
+  
+  .-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button.bg-white {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button.bg-white:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  button.bg-red-500 {
+    background-color: #f87171;
+    color: white;
+  }
+  
+  button.text-white {
+    color: white;
+  }
+  
+  button span {
+    font-size: 1rem;
+  }
+  
+  button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  

@@ -1,0 +1,199 @@
+/* styles.css */
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bg-red {
+  background-color: #FF4D4D;
+}
+
+
+.bg-white {
+  background-color: white;
+}
+
+.text-red {
+  color: #FF4D4D;
+}
+
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.space-y-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.space-y-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.md\:grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.md\:py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.hover\:bg-gray-900:hover {
+  background-color: #1a1a1a;
+}
+
+.transition-colors {
+  transition: background-color 0.2s ease;
+}
+
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}

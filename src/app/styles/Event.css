@@ -1,0 +1,186 @@
+/* event-intro section */
+.event-intro {
+    width: 100%;
+    background-color: white;
+    padding: 60px 0 16px 0; /* Increased padding-top for more space */
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 24px;
+}
+
+.description {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* events section */
+.events {
+    min-height: 100vh;
+    background-color: white;
+    padding: 16px;
+}
+
+.event-list {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.event-item {
+    margin-bottom: 48px;
+}
+
+.event-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.event-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 16px;
+}
+
+.event-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.event-image {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.event-image-wrapper:hover .event-image {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.read-more {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+/* reservation section */
+.reservation {
+    min-height: 100vh;
+    background-color: #FF4747;
+    color: white;
+    padding: 32px;
+}
+
+.reservation-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: text on left, image on right */
+    gap: 32px;
+}
+
+.reservation-content > * {
+    margin-bottom: 32px;
+}
+
+.reservation-content > *:last-child {
+    margin-bottom: 0; 
+}
+
+.reservation-header {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.reservation-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.reservation-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.submit-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2d2d2d;
+}
+
+.reservation-image-wrapper {
+    display: block; /* Image is always visible now */
+}
+
+.reservation-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .reservation-container {
+        grid-template-columns: 1fr; /* On smaller screens, stack the content */
+    }
+}

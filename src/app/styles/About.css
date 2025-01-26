@@ -1,0 +1,52 @@
+/* About Page Styling */
+.about-main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    padding-top: 4rem; /* Padding to ensure the content starts below the navbar */
+  }
+  
+  .about-container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-subheading {
+    color: #f56565;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .about-description {
+    color: #4a5568;
+    font-size: 1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  
+  .about-image-container {
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+  
+  .about-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  

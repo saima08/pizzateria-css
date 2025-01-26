@@ -1,0 +1,169 @@
+.testimonial-section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #F56565;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fade-in 0.8s ease-in-out;
+}
+
+.testimonial-subheading {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.testimonial-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-grid {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+.testimonial-block {
+  animation: slide-in-left 0.8s ease-in-out;
+  position: relative;
+}
+
+.testimonial-quote {
+  position: relative;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.testimonial-quote-icon {
+  position: absolute;
+  top: -50;
+  left: 0;
+  transform: translate(-0.5rem, -0.5rem); 
+  color: #ffffff;
+  z-index: 1; 
+}
+
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.author-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.author-image:hover {
+  transform: scale(1.1);
+}
+
+.author-details {
+  color: #ffffff;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #1A202C;
+}
+
+.author-title {
+  font-size: 0.875rem;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.star-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #ECC94B;
+  color: #ECC94B;
+}
+
+.rating-score {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.testimonial-image {
+  animation: slide-in-right 0.8s ease-in-out;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+      transform: translateX(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+      transform: translateX(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}

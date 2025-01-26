@@ -1,0 +1,154 @@
+/* Pizzateria styles */
+.text-red-500 {
+    color: #ef4444;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.bg-red-500 {
+    background-color: #ef4444;
+}
+
+.bg-red-600 {
+    background-color: #dc2626;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+
+.bg-orange-50 {
+    background-color: #fff7ed;
+}
+
+.transition-colors {
+    transition: all 0.3s ease;
+}
+
+.text-gray-600 {
+    color: #4a4a4a;
+}
+
+.hover\:bg-gray-200:hover {
+    background-color: #e5e7eb;
+}
+
+.px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.space-x-2 {
+    margin-right: 0.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.w-6 {
+    width: 1.5rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+.h-32 {
+    height: 8rem;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}

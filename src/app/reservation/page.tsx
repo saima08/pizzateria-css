@@ -30,12 +30,12 @@ export default function Reservation() {
                   <form className="space-y-4">
                     <div>
                       <label htmlFor="name" className="sr-only">
-                        Orderer's name
+                        Orderer&apos;s name
                       </label>
                       <input
                         type="text"
                         id="name"
-                        placeholder="Orderer's name"
+                        placeholder="Orderer&apos;s name"
                         className="w-full px-4 py-3 rounded-md bg-white placeholder-gray-500"
                       />
                     </div>

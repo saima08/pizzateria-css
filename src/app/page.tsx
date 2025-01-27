@@ -1,27 +1,30 @@
-
-"use client"
+"use client";
 
 import React from "react";
+import Image from "next/image"; // Importing Image component from next/image
 import Navbar from "./components/Navbar";
 import MenuSection from "./components/Selection";
 import TestimonialSection from "./components/TestimonialSection";
 import Pizzateria from "./components/Pizzatria";
 import { Footer } from "./components/Footer";
-import "./styles/Home.css"
+import "./styles/Home.css";
 
 export default function HomePage() {
   return (
     <>
-    <div className="navbar-container">
-      <Navbar />
-    </div>
+      <div className="navbar-container">
+        <Navbar />
+      </div>
 
       <div className="hero-section">
         <div className="hero-background">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1513104890138-7c749659a591"
             alt="Pizza Background"
             className="hero-image"
+            layout="fill" // Ensures image covers the container
+            objectFit="cover" // Ensures the image maintains aspect ratio
+            priority // Loads this image first for better performance
           />
           <div className="hero-overlay" />
         </div>
@@ -41,9 +44,7 @@ export default function HomePage() {
             delivered swiftly and at no extra cost
           </p>
 
-          <button className="cta-button">
-            Get Started
-          </button>
+          <button className="cta-button">Get Started</button>
         </div>
       </div>
 
@@ -66,15 +67,15 @@ export default function HomePage() {
           <div className="offerings-grid">
             <div className="offering-card">
               <div className="offering-image">
-                <img
+                <Image
                   src="/Images/ordering.png"
                   alt="Convenient Ordering"
                   className="offering-img"
+                  width={200} // Adjust the width of the image
+                  height={200} // Adjust the height of the image
                 />
               </div>
-              <h3 className="offering-title">
-                Convenient Ordering
-              </h3>
+              <h3 className="offering-title">Convenient Ordering</h3>
               <p className="offering-description">
                 Ordering food requires just a few simple steps
               </p>
@@ -82,15 +83,15 @@ export default function HomePage() {
 
             <div className="offering-card highlighted">
               <div className="offering-image">
-                <img
+                <Image
                   src="/Images/delivery.png"
                   alt="Quickest Delivery"
                   className="offering-img"
+                  width={200}
+                  height={200}
                 />
               </div>
-              <h3 className="offering-title">
-                Quickest Delivery
-              </h3>
+              <h3 className="offering-title">Quickest Delivery</h3>
               <p className="offering-description">
                 Consistently Timely Delivery, Even Faster
               </p>
@@ -98,15 +99,15 @@ export default function HomePage() {
 
             <div className="offering-card">
               <div className="offering-image">
-                <img
+                <Image
                   src="/Images/quality.png"
                   alt="Superior Quality"
                   className="offering-img"
+                  width={200}
+                  height={200}
                 />
               </div>
-              <h3 className="offering-title">
-                Superior Quality
-              </h3>
+              <h3 className="offering-title">Superior Quality</h3>
               <p className="offering-description">
                 For us, quality is paramount, not just speed
               </p>

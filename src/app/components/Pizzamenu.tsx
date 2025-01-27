@@ -1,6 +1,7 @@
 import React from "react";
 import { Heart, ShoppingCart } from "lucide-react";
-import "../styles/Pizzamenu.css"; 
+import Image from "next/image"; // Importing Image from next/image
+import "../styles/Pizzamenu.css";
 
 // Define the type for a pizza object
 type Pizza = {
@@ -89,7 +90,14 @@ function PizzaCard({ name, price, rating, image }: PizzaCardProps) {
     <div className="pizza-card">
       <div className="relative">
         <div className="pizza-image-container">
-          <img src={image} alt={name} className="pizza-image" />
+          {/* Replacing <img> with <Image /> */}
+          <Image
+            src={image}
+            alt={name}
+            width={300} // Adjust as per design requirements
+            height={300} // Adjust as per design requirements
+            className="pizza-image"
+          />
           <div className="gradient-overlay" />
         </div>
         <button className="favorite-button">

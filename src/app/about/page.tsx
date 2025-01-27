@@ -3,7 +3,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
-import "../styles/About.css"
+import Image from "next/image"; // Importing next/image for image optimization
+import "../styles/About.css";
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
           <div className="about-header">
             <p className="about-subheading">ABOUT US</p>
             <h1 className="about-title">
-              Let's delve deeper into
+              Let&apos;s delve deeper into
               <br />
               understanding Pizzateria
             </h1>
@@ -31,9 +32,11 @@ export default function About() {
             </p>
           </div>
           <div className="about-image-container">
-            <img
+            <Image
               src="/Images/largepizza.png"
-              alt="Delicious pizza with olives, bell peppers and melted cheese"
+              alt="Delicious pizza with olives, bell peppers, and melted cheese"
+              width={600} // Set a suitable width for the image
+              height={400} // Set a suitable height for the image
               className="about-image"
             />
           </div>

@@ -1,7 +1,8 @@
 import { Menu, Search, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image"; // Importing Image from next/image
 import React, { useEffect, useState } from "react";
-import "../styles/Navbar.css"
+import "../styles/Navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,13 @@ export default function Navbar() {
         <div className="navbar-inner">
           {/* Logo */}
           <div className="logo">
-            <img src="/Images/logo.png" alt="Pizzateria Logo" className="logo-img" />
+            <Image
+              src="/Images/logo.png" // Path to the logo image
+              alt="Pizzateria Logo"
+              width={120} // Adjust the width based on your design
+              height={50} // Adjust the height based on your design
+              className="logo-img"
+            />
             <span className="logo-text">Pizzateria</span>
           </div>
 

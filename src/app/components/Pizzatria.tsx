@@ -1,6 +1,7 @@
 import { MapPin, Menu, ChevronRight, Pizza, Coffee, IceCream, Utensils } from "lucide-react";
 import React from "react";
-import "../styles/Pizzatria.css"
+import Image from "next/image"; // Importing Image from next/image
+import "../styles/Pizzatria.css";
 
 export default function Pizzateria() {
     return (
@@ -102,8 +103,9 @@ interface CategoryButtonProps {
 function CategoryButton({ icon, label, active = false }: CategoryButtonProps) {
     return (
         <button
-            className={`flex items-center space-x-2 px-4 py-2 rounded-full whitespace-nowrap ${active ? "bg-red-500 text-white" : "bg-gray-100 hover:bg-gray-200"
-                }`}
+            className={`flex items-center space-x-2 px-4 py-2 rounded-full whitespace-nowrap ${
+                active ? "bg-red-500 text-white" : "bg-gray-100 hover:bg-gray-200"
+            }`}
         >
             {icon}
             <span>{label}</span>
@@ -121,9 +123,12 @@ interface FoodCardProps {
 function FoodCard({ image, name, price }: FoodCardProps) {
     return (
         <div className="bg-red-100 rounded-xl p-4 transition-transform hover:scale-105">
-            <img
+            {/* Replace <img> with <Image /> */}
+            <Image
                 src={image}
                 alt={name}
+                width={300} // Adjust width
+                height={128} // Adjust height for object-cover
                 className="w-full h-32 object-cover rounded-lg mb-3"
             />
             <h4 className="font-medium">{name}</h4>

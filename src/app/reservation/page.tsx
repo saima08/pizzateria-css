@@ -3,7 +3,8 @@
 import React from "react";
 import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
-import "../styles/Reservation.css" 
+import Image from "next/image"; // Importing next/image for image optimization
+import "../styles/Reservation.css";
 
 export default function Reservation() {
   return (
@@ -72,9 +73,11 @@ export default function Reservation() {
                 </div>
               </div>
               <div className="hidden md:block">
-                <img
+                <Image
                   src="/Images/dining.png"
                   alt="Top view of a round restaurant table with chairs"
+                  width={600} // Set the appropriate width for the image
+                  height={400} // Set the appropriate height for the image
                   className="w-full h-auto object-cover"
                 />
               </div>

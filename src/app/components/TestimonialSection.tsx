@@ -1,4 +1,5 @@
 import { Star, StarHalf } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 import "../styles/TestimonialSection.css";
 
@@ -27,18 +28,20 @@ export default function TestimonialSection() {
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
               </svg>
               <p>
-                "Pizzateria is exceptional. With a wide array of delicious meals
-                and excellent service, including remarkably fast delivery, I
-                wholeheartedly recommend Pizzateria to you."
+                &quot;Pizzateria is exceptional. With a wide array of delicious
+                meals and excellent service, including remarkably fast delivery, I
+                wholeheartedly recommend Pizzateria to you.&quot;
               </p>
             </blockquote>
 
             {/* Author Section */}
             <div className="testimonial-author">
-              <img
+              <Image
                 className="author-image"
                 src="/Images/xaviera.png"
                 alt="Portrait of Aracelly Xaviera"
+                width={50}
+                height={50}
                 loading="lazy"
               />
               <div className="author-details">
@@ -60,10 +63,12 @@ export default function TestimonialSection() {
 
           {/* Image Section */}
           <div className="testimonial-image">
-            <img
+            <Image
               className="testimonial-img"
               src="/Images/pizza.png"
               alt="Delicious pizza on a wooden serving board"
+              width={600}
+              height={400}
               loading="lazy"
             />
           </div>

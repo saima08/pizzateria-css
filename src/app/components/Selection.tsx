@@ -1,6 +1,7 @@
 import { Heart, ChevronRight, Plus, ChevronLeft } from "lucide-react";
 import React from "react";
-import "../styles/Selection.css"
+import Image from "next/image"; // Import Next.js Image component
+import "../styles/Selection.css";
 
 export default function MenuSection() {
   const menuItems = [
@@ -43,19 +44,39 @@ export default function MenuSection() {
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-            <img src="/Images/burger.png" alt="Burger" className="w-6 h-6" />
+            <Image
+              src="/Images/burger.png"
+              alt="Burger"
+              width={24}
+              height={24}
+            />
             <span>Burger</span>
           </button>
           <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-red-500 text-white">
-            <img src="/Images/pizzaslice.png" alt="Pizza" className="w-6 h-6" />
+            <Image
+              src="/Images/pizzaslice.png"
+              alt="Pizza"
+              width={24}
+              height={24}
+            />
             <span>Pizza</span>
           </button>
           <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-            <img src="/Images/cupcake.png" alt="Cup Cake" className="w-6 h-6" />
+            <Image
+              src="/Images/cupcake.png"
+              alt="Cup Cake"
+              width={24}
+              height={24}
+            />
             <span>Cup Cake</span>
           </button>
           <button className="flex items-center gap-2 px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
-            <img src="/Images/ramen.png" alt="Ramen" className="w-6 h-6" />
+            <Image
+              src="/Images/ramen.png"
+              alt="Ramen"
+              width={24}
+              height={24}
+            />
             <span>Ramen</span>
           </button>
           <button className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-shadow">
@@ -71,9 +92,11 @@ export default function MenuSection() {
                 className="bg-white rounded-3xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow"
               >
                 <div className="relative">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
+                    width={300}
+                    height={192}
                     className="w-full h-48 object-cover"
                   />
                   <button className="absolute top-4 right-4 text-white hover:text-red-500 transition-colors">
@@ -92,7 +115,9 @@ export default function MenuSection() {
                     {[...Array(5)].map((_, i) => (
                       <svg
                         key={i}
-                        className={`w-5 h-5 ${i < item.rating ? "text-yellow-400" : "text-gray-300"}`}
+                        className={`w-5 h-5 ${
+                          i < item.rating ? "text-yellow-400" : "text-gray-300"
+                        }`}
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >

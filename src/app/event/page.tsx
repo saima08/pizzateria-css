@@ -4,7 +4,8 @@ import { ChevronRight } from "lucide-react";
 import React from "react";
 import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
-import "../styles/Event.css"
+import Image from "next/image"; // Importing Next.js Image
+import "../styles/Event.css";
 
 export default function Event() {
   const events = [
@@ -42,7 +43,7 @@ export default function Event() {
         <div className="container">
           <h1 className="title">Celebrate your event with deliciousness at the pizzateria</h1>
           <p className="description">
-            Pizzateria Event is a comfortable and elegantly designed space, specially designed to host various special events. With charming decorations, warm lighting and a friendly atmosphere, this event section is suitable for various occasions from birthdays, business meetings, to family parties.
+            Pizzateria Event is a comfortable and elegantly designed space, specially designed to host various special events. With charming decorations, warm lighting, and a friendly atmosphere, this event section is suitable for various occasions from birthdays, business meetings, to family parties.
           </p>
         </div>
       </section>
@@ -55,10 +56,13 @@ export default function Event() {
               <div className="event-images">
                 {event.images.map((image, imgIndex) => (
                   <div key={imgIndex} className="event-image-wrapper">
-                    <img
+                    <Image
                       src={image}
                       alt={`${event.title} ${imgIndex + 1}`}
                       className="event-image"
+                      width={300} // Adjust width as needed
+                      height={200} // Adjust height as needed
+                      loading="lazy"
                     />
                     <div className="overlay"></div>
                     <button className="read-more">
@@ -78,7 +82,9 @@ export default function Event() {
           <div className="reservation-content">
             <div>
               <p className="reservation-header">RESERVATION</p>
-              <h1 className="reservation-title">Turn your dining dreams into reality by booking a table with us</h1>
+              <h1 className="reservation-title">
+                Turn your dining dreams into reality by booking a table with us
+              </h1>
             </div>
             <div>
               <h2 className="reservation-subtitle">Reservation Now!</h2>
@@ -93,7 +99,14 @@ export default function Event() {
             </div>
           </div>
           <div className="reservation-image-wrapper">
-            <img src="/Images/dining.png" alt="Top view of a round white table with chairs" className="reservation-image" />
+            <Image
+              src="/Images/dining.png"
+              alt="Top view of a round white table with chairs"
+              className="reservation-image"
+              width={600} // Adjust width as needed
+              height={400} // Adjust height as needed
+              loading="lazy"
+            />
           </div>
         </section>
       </main>

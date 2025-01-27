@@ -4,7 +4,8 @@ import React from "react";
 import Pizzamenu from "../components/Pizzamenu";
 import { Footer } from "../components/Footer";
 import Navbar from "../components/Navbar";
-import "../styles/Menu.css"; 
+import Image from "next/image"; // Import the Image component
+import "../styles/Menu.css";
 
 export default function Menu() {
   return (
@@ -24,44 +25,49 @@ export default function Menu() {
             </h1>
             <div className="flex items-center justify-start md:justify-center gap-3 overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide">
               <button className="bg-white shadow-md hover:shadow-lg">
-                <img
+                <Image
                   src="/Images/burger.png"
                   alt="Burger"
-                  className="w-6 h-6"
+                  width={24} // Adjust the width and height for Image
+                  height={24}
                 />
                 <span>Burger</span>
               </button>
               <button className="bg-red-500 text-white">
-                <img
+                <Image
                   src="/Images/pizzaslice.png"
                   alt="Pizza"
-                  className="w-6 h-6"
+                  width={24} // Adjust the width and height for Image
+                  height={24}
                 />
                 <span>Pizza</span>
               </button>
               <button className="bg-white shadow-md hover:shadow-lg">
-                <img
+                <Image
                   src="/Images/cupcake.png"
                   alt="Cup Cake"
-                  className="w-6 h-6"
+                  width={24} // Adjust the width and height for Image
+                  height={24}
                 />
                 <span>Cup Cake</span>
               </button>
               <button className="bg-white shadow-md hover:shadow-lg">
-                <img
+                <Image
                   src="/Images/ramen.png"
                   alt="Ramen"
-                  className="w-6 h-6"
+                  width={24} // Adjust the width and height for Image
+                  height={24}
                 />
                 <span>Ramen</span>
               </button>
               <button className="bg-white shadow-md hover:shadow-lg">
-                <img
+                <Image
                   src="/Images/icecream.png"
-                  alt="IceCream"
-                  className="w-6 h-6"
+                  alt="Ice Cream"
+                  width={24} // Adjust the width and height for Image
+                  height={24}
                 />
-                <span>IceCream</span>
+                <span>Ice Cream</span>
               </button>
             </div>
           </div>
